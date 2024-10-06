@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/cropped-m2l.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.google.com/specimen/Nunito" rel="stylesheet"> <!-- Ajout d'une police Google Font via un lien -->
+    <title>M2L</title>
+</head>
+<body>
+    <header>
+        <h1>Maison des Ligues de Lorraine</h1>
+        <nav>
+            <ul>
+                <li><a href="#structures">Structures</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://sportgrandest.eu/" target="_blank">Comité Régional Olympique</a></li>
+            </ul>
+        </nav>
+    </header>    
+    <h2>La Maison des Ligues de Lorraine (M2L) a pour mission de fournir des espaces et des services aux différentes ligues sportives régionales et à d’autres structures hébergées. La M2L est une structure financée par le Conseil Régional de Lorraine dont l'administration est déléguée au Comité Régional Olympique et Sportif de Lorraine (CROSL).</h2>
+    <section id="structures" class="structures_section">
+    <div class="structure">
+        <div class="image_structure">
+            <img src="image/gymnase.png" height="250" width="250">
+        </div>
+        <div class="text_structure">
+            <p>
+                La M2L possède un complexe sportif polyvalent. Voici un aperçu des différentes structures disponibles :
+            </p>
+            <ul>
+                <li><strong>1 gymnase</strong></li>
+                <li><strong>5 salles de danse</strong></li>
+                <li><strong>2 terrains de football</strong></li>
+                <li><strong>2 terrains de basket</strong></li>
+                <li><strong>1 piscine</strong></li>
+                <li><strong>Et bien plus encore !</strong></li>
+            </ul>
+            <p>
+                Que vous soyez un athlète chevronné ou un amateur de loisirs, la M2L a tout ce qu'il faut pour vous accueillir.
+            </p>
+        </div>
+    </div>
+    </section>
+    <br><br/>
+    <section id="services" class="services_section">
+    <div class="service">
+        <div class="text_service">
+            <p>
+                La M2L s'engage à promouvoir le sport pour tous, en offrant des cours adaptés aussi bien aux enfants qu'aux adultes. Que vous soyez débutant ou expérimenté, vous trouverez des activités qui répondent à vos attentes.
+            </p>
+            <p>
+                Les utilisateurs peuvent bénéficier d'un abonnement qui leur permet d'accéder à l'ensemble des installations de la M2L. De plus, certaines structures peuvent être utilisées gratuitement, sous réserve de réservation préalable ou si elles sont disponibles au moment de votre visite.
+            </p>
+            <p>
+                Cette flexibilité permet à chacun de profiter pleinement des installations, que ce soit pour des cours organisés ou pour des activités libres. La M2L est ainsi un lieu idéal pour pratiquer votre sport favori dans un cadre convivial et dynamique.
+            </p>
+        </div>
+        <div class="image_service">
+            <img src="image/gymnaste.png" alt="Gymnaste M2L" height="250" width="250">
+        </div>
+    </div>
+    </section>
+    <br><br/>
+    <div id="contact" class="formulaire">
+        <form>
+            <div class="nom_prenom">
+                <div class="champ_input">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom">
+                </div>
+                <div class="champ_input">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Votre prénom">
+                </div>
+            </div>
+            <div class="champ_input">
+                <label for="email">Adresse Email</label>
+                <input type="email" id="email" name="email" placeholder="Votre adresse email">
+            </div>
+            <div class="champ_input">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Votre message" rows="5"></textarea> <!--Placeholder pour afficher un texte par défaut dans la case + rows pour la zone de texte soit assez grande sans faire défiler-->
+            </div>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+    <footer>
+        <div class="pied_page">
+            <p>&copy; 2024 Maison des Ligues de Lorraine (M2L). Tous droits réservés.</p>
+            <p>
+                <!--Permet de mettre un lien sur une image-->
+                <a href="https://validator.w3.org/" target="_blank">
+                    <img src="image/HTML5_logo.png" alt="Valide HTML5" width="100">
+                </a>
+                <a href="https://jigsaw.w3.org/css-validator/" target="_blank">
+                    <img src="image/css3.png" alt="Valide CSS3" width="100">
+                </a>
+            </p>
+        </div>
+    </footer>
+    
+</body>
+</html>

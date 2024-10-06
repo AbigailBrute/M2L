@@ -1,0 +1,216 @@
+body 
+{
+    background-image: url('image/fond.jpeg');
+    background-size: cover; /* taille du fond */
+    background-position: top;
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+    background-color: #badcf5;
+    font-family: 'Nunito', serif; /* Police de caractère */
+    margin-top: 30px; /* Gère l'espace entre le body et les autres éléments au-dessus */
+    width: 800px; /* Largeur de la page de 800px */
+    margin-left: auto; /* Centrer horizontalement */
+    margin-right: auto; /* Centrer horizontalement */
+}
+/* Grand Titre*/
+h1 
+{
+    font-size: 2.0em; /* fait que la taille du texte sera 2 fois plus grande que la taille de police par défaut */
+    color: #000000; /* Couleur du texte */
+    font-style: italic; /* Italique */
+    text-align: center; /* Centrer le texte */
+}
+
+h2 
+{
+    font-size: 1.0em; /* fait que la taille du texte sera 1 fois plus grande que la taille de police par défaut */
+    color: #000000; /* Couleur du texte */
+    text-align: center; /* Centrer le texte */
+}
+
+.structure 
+{
+    display: flex; /* Utilise Flexbox pour aligner les éléments */
+    align-items: flex-start; /* Alignement les éléments en haut du conteneur, les mettant côte à côte  */
+    gap: 10px; /* Espacement entre l'image et le texte */
+}
+
+.text_structure 
+{
+    flex: 1; /* Prend l'espace restant après l'image */
+    margin-left: 5px;
+    background-color: rgba(255, 255, 255, 0.6); /* Couleur blanche avec une opacité de 60% */
+    padding: 5px; /* marge intérieur*/
+    border-radius: 2px; /* Arrondir les coins */
+}
+
+.image_structure 
+{
+    flex: 0 0 250px; /* l'image ne remplit pas l'espace s'il en reste, ne réctécie pas si plus d'espace dans le conteneur et sa taille est de 250px */
+}
+
+.image_structure img 
+{
+    max-width: 100%; /* Assure que l'image ne dépasse pas la largeur de son conteneur */
+}
+
+.service 
+{
+    display: flex; /* Utilise Flexbox pour aligner les éléments */
+    justify-content: space-between; /* Sépare les éléments pour occuper tout l'espace */
+    align-items: flex-start; /* Alignement les éléments en haut du conteneur, les mettant côte à côte  */
+    gap: 10px; /* Espacement entre l'image et le texte */
+}
+
+.text_service 
+{
+    flex: 1; /* Prend l'espace restant après l'image */
+    margin-left: 5px;
+    background-color: rgba(255, 255, 255, 0.6); 
+    padding: 5px; 
+    border-radius: 2px; /* Arrondir les coins */
+}
+
+.image_service 
+{
+    flex: 0 0 250px; /* L'image prend un espace fixe de 250px de largeur */
+    
+}
+
+.image_service img 
+{
+    max-width: 100%; /* S'assure que l'image ne dépasse pas la taille définie */
+}
+
+.formulaire 
+{
+    background-color: rgba(255, 255, 255, 0.6); /* Fond blanc transparent */
+    padding: 20px; /* Espacement à l'intérieur du formulaire */
+    border-radius: 10px; /* Coins arrondis */
+    width: 400px; /* Largeur du formulaire */
+    margin: 0 auto; /* Centrer le formulaire */
+}
+
+.formulaire form 
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.nom_prenom 
+{
+    display: flex;
+    justify-content: space-between; /* Espace les champs nom et prénom */
+}
+
+.champ_input 
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.champ_input input,
+.champ_input textarea 
+{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Nunito', serif; /* Police de caractère */
+    font-size: 1em;
+}
+
+.champ_input label 
+{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.nom_prenom .champ_input 
+{
+    width: 48%; /* Champ nom et prénom prennent 48% de la largeur */
+}
+
+button 
+{
+    padding: 10px;
+    background-color: #1fcef1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Nunito', serif; /* Police de caractère */
+    font-size: 1em;
+}
+
+button:hover 
+{
+    background-color: #082b52; /* Couleur au survol */
+}
+
+footer 
+{
+    background-color: rgba(17, 67, 116, 0.6); 
+    color: white; /* Texte en blanc */
+    text-align: center; /* Centrer le texte */
+    padding: 20px 0; /* Espace intérieur */
+    margin-top: 30px; /* Espace au-dessus du pied de page */
+    border-radius: 10px; /* Coins arrondis */
+}
+
+.pied_page a 
+{
+    margin: 0 10px; /* Espace entre les images */
+    display: inline-block; /* Aligner les images horizontalement */
+}
+
+.pied_page img 
+{
+    vertical-align: middle; /* Aligner les images avec le texte */
+}
+
+footer p 
+{
+    margin: 10px 0; /* Espacement entre les paragraphes */
+}
+
+nav 
+{
+    background-color: rgba(22, 97, 217, 0.6); 
+    padding: 10px; /* Espacement autour du menu */
+}
+
+nav ul 
+{
+    list-style-type: none; /* Supprime les puces */
+    margin: 0; /* Supprime la marge par défaut */
+    padding: 0; /* Supprime le remplissage par défaut */
+    display: flex; /* Aligne les éléments horizontalement */
+    justify-content: center; /* Centre les éléments */
+}
+
+nav li 
+{
+    margin: 0 15px; /* Espace entre les éléments du menu */
+}
+
+nav a 
+{
+    color: white; /* Texte en blanc */
+    text-decoration: none; /* Enlève le soulignement */
+    font-weight: bold; /* Met le texte en gras */
+}
+
+/* Style pour les liens au survol */
+nav a:hover 
+{
+    text-decoration: underline; /* Ajoute un soulignement au survol */
+    color: #000000; /* Couleur au survol */
+}
+
+/* Style pour les liens déjà visités */
+nav a:visited 
+{
+    color: #0b019c; /* Change la couleur des liens visités */
+}
+
+
