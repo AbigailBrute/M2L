@@ -22,10 +22,20 @@ h1
 
 h2 
 {
-    font-size: 1.0em; /* fait que la taille du texte sera 1 fois plus grande que la taille de police par défaut */
+    font-size: 1.1em; /* fait que la taille du texte sera 1 fois plus grande que la taille de police par défaut */
     color: #000000; /* Couleur du texte */
     text-align: center; /* Centrer le texte */
 }
+
+h3 
+{
+    font-size: 1.5em;
+    color: #000000;
+    font-style: italic; /* Applique l'italique */
+    font-weight: bold; /* Applique le gras */
+    text-align: center; /* Centre le texte */
+}
+
 
 .structure 
 {
@@ -109,8 +119,7 @@ h2
     margin-bottom: 15px;
 }
 
-.champ_input input,
-.champ_input textarea 
+.champ_input input, .champ_input textarea 
 {
     padding: 10px;
     border: 1px solid #ccc;
@@ -216,28 +225,56 @@ nav a:visited
 
 @media screen and (max-width: 700px)
 {
-    body {
+    body 
+    {
         width: 100%; /* Prend toute la largeur disponible */
         margin-left: 0; /* Supprime la marge gauche */
         margin-right: 0; /* Supprime la marge droite */
     }
 
-    .structure, .service {
-        flex-direction: column; /* Aligne les éléments en colonne (un en-dessous de l'autre) */
-        gap: 20px; /* Augmente l'espacement entre les éléments pour un meilleur rendu */
+   /* Structure du texte */
+   .text_structure, .text_service 
+   {
+        width: 95%; 
+        text-align: center; 
+        font-size: 1em; 
+        margin-bottom: 0px; /* Espace en dessous du texte */
     }
 
-    .image_structure, .image_service {
-        flex: 0 0 200px; /* Réduit la taille de l'image */
-        margin-bottom: 10px; /* Ajoute un espace sous l'image */
+    /* Garder les images côte à côte */
+    .image_structure, .image_service 
+    {
+        flex: 0 0 100%; /* L'image prend toute la largeur */
+        margin: 0 0 5px 0; /* Ajoute un espace en dessous de l'image */
     }
 
-    .formulaire {
-        width: 100%; /* Prend toute la largeur de l'écran pour le formulaire */
+    .image_structure img, .image_service img 
+    {
+        width: 100%; /* L'image occupe toute la largeur disponible */
+        height: auto; /* Ajuste la hauteur automatiquement en fonction de la largeur */
     }
 
-    nav ul {
+    
+    .structure, .service 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .formulaire 
+    {
+        width: 90%;
+    }
+
+    nav ul 
+    {
         flex-direction: column; /* Empile les éléments du menu en colonne */
+    }
+
+    nav li 
+    {
+        margin: 5px 0; /* Espacement entre les éléments du menu */
     }
     
 }
