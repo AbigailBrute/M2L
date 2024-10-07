@@ -214,11 +214,30 @@ nav a:visited
 }
 
 
-@media screen and (max-width: 900px)
+@media screen and (max-width: 700px)
 {
-    .body{
-        width: 90%;
-        font-size: 0.9em;
+    body {
+        width: 100%; /* Prend toute la largeur disponible */
+        margin-left: 0; /* Supprime la marge gauche */
+        margin-right: 0; /* Supprime la marge droite */
+    }
+
+    .structure, .service {
+        flex-direction: column; /* Aligne les éléments en colonne (un en-dessous de l'autre) */
+        gap: 20px; /* Augmente l'espacement entre les éléments pour un meilleur rendu */
+    }
+
+    .image_structure, .image_service {
+        flex: 0 0 200px; /* Réduit la taille de l'image */
+        margin-bottom: 10px; /* Ajoute un espace sous l'image */
+    }
+
+    .formulaire {
+        width: 100%; /* Prend toute la largeur de l'écran pour le formulaire */
+    }
+
+    nav ul {
+        flex-direction: column; /* Empile les éléments du menu en colonne */
     }
     
 }
