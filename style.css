@@ -40,6 +40,7 @@ h3
 .structure 
 {
     display: flex; /* Utilise Flexbox pour aligner les éléments */
+    justify-content: space-between; /* Sépare les éléments pour occuper tout l'espace */
     align-items: flex-start; /* Alignement les éléments en haut du conteneur, les mettant côte à côte  */
     gap: 10px; /* Espacement entre l'image et le texte */
 }
@@ -48,6 +49,7 @@ h3
 {
     flex: 1; /* Prend l'espace restant après l'image */
     margin-left: 5px;
+    margin-right: 5px;
     background-color: rgba(255, 255, 255, 0.6); /* Couleur blanche avec une opacité de 60% */
     padding: 5px; /* marge intérieur*/
     border-radius: 2px; /* Arrondir les coins */
@@ -75,6 +77,7 @@ h3
 {
     flex: 1; /* Prend l'espace restant après l'image */
     margin-left: 5px;
+    margin-right: 5px;
     background-color: rgba(255, 255, 255, 0.6); 
     padding: 5px; 
     border-radius: 2px; /* Arrondir les coins */
